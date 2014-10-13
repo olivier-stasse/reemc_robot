@@ -11,8 +11,6 @@
   <!-- TF lookup -->
   <node pkg="tf_lookup" type="tf_lookup" name="tf_lookup" output="screen"/>
 
-  <!-- Twist mux -->
-  <include file="$(find reemc_bringup)/launch/twist_mux.launch" />
 
   <!-- Joystick controller -->
   <include file="$(find reemc_bringup)/launch/joystick_teleop.launch" />
@@ -26,7 +24,5 @@
   <!-- Sitting application requirements -->
   <include file="$(find reemc_bringup)/launch/chair_sit.launch" />
 
-  <!-- Arm motions executor while walking -->
-  <include file="$(find reemc_bringup)/launch/walk_pose.launch" />
 
 </launch>
